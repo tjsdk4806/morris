@@ -1,0 +1,89 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML Settings */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Settings */
+body {
+  font-family: "Pretendard", sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Heading Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* List Reset */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* Link Reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Image Settings */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* Button Reset */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+/* Form Element Settings */
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Input Reset */
+input,
+textarea {
+  outline: none;
+}
+
+/* Table Reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Address Reset */
+address {
+  font-style: normal;
+}
+
+/* Text Emphasis */
+strong,
+b {
+  font-weight: bold;
+}
