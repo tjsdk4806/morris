@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MORRIS</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="모리스 | 모리스 공식 홈페이지" />
+    <meta property="og:description" content="모리스의 새로운 제품과 다양한 소식을 만나보세요." />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link
       rel="stylesheet"
@@ -40,6 +45,64 @@
       </ul>
       <!-- <div class="swiper-pagination"></div> -->
     </div>
+    <input type="checkbox" id="floating-close" />
+    <div class="floating">
+      <label for="floating-close" class="close"><img src="../images/common/floating_close.svg" alt="" /></label>
+      <img class="floating-logo" src="../images/common/floating_logo.svg" alt="" />
+      <div class="floating-menu">
+        <a href="">
+          <span class="in">온라인 스토어 <br />바로가기 </span>
+          <img class="img1" src="../images/common/floating_arr_default.png" alt="" />
+        </a>
+        <div class="line"></div>
+        <a href=""
+          ><span class="on">대량 구매 문의 </span>
+          <img src="../images/common/floating_arr_default.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <!-- main visual end -->
+    <section class="visual-box">
+      <div class="heading-box">
+        <span> NEW PRODUCT</span>
+        <h2 class="h2-top">
+          새롭게 선보이는- <br />
+          모리스의 제품 컬렉션
+        </h2>
+        <p class="p-top">전체 제품 보기 <img src="../images/common/link_arr_wh.png" alt="" /></p>
+      </div>
+      <ul class="list2">
+        <li>
+          <div><img src="../images/common/visual05.jpg" alt="" /></div>
+          <div>
+            <h2>Prime 글리터 형광펜 S</h2>
+            <p><img src="../images/common/floating_arr_default.png" alt="" /></p>
+          </div>
+        </li>
+        <li>
+          <div><img src="../images/common/visual06.jpg" alt="" /></div>
+          <div>
+            <h2>Prime 글리터 형광펜 S</h2>
+            <p><img src="../images/common/floating_arr_default.png" alt="" /></p>
+          </div>
+        </li>
+        <li>
+          <div><img src="../images/common/visual07.jpg" alt="" /></div>
+          <div>
+            <h2>Prime 글리터 형광펜 S</h2>
+            <p><img src="../images/common/floating_arr_default.png" alt="" /></p>
+          </div>
+        </li>
+        <li>
+          <div><img src="../images/common/visual08.jpg" alt="" /></div>
+          <div>
+            <h2>Prime 글리터 형광펜 S</h2>
+            <p><img src="../images/common/floating_arr_default.png" alt="" /></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <script>
       mainSlider = new Swiper(".main-visual", {
         loop: true,
@@ -47,6 +110,5 @@
         effect: "fade",
       });
     </script>
-    <!-- main visual end -->
   </body>
 </html>
