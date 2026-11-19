@@ -219,10 +219,10 @@ body {
   font-weight: 400;
 }
 .product .title-box p {
-  font-size: 65px;
-  font-weight: 600;
   margin-top: 40px;
   margin-bottom: 40px;
+  font-size: 65px;
+  font-weight: 600;
 }
 .product .slider li {
   width: 420px;
@@ -245,23 +245,54 @@ body {
   transition: all 0.25s ease;
 }
 .product .slider .info {
-  font-size: 24px;
-  font-weight: 500;
-  margin: 20px 0;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 500;
 }
-.product .slider .arrow-round {
-  width: 30px;
-  height: 30px;
+.product .slider .info span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: 0.3s ease;
+}
+.product .slider .info span:hover {
+  background-color: #333;
+  color: #fff;
 }
 .product .pagination {
-  width: 80%;
   top: auto;
   bottom: 0;
+  width: 100%;
 }
 .product .pagination .swiper-pagination-progressbar-fill {
   background-color: #646464;
+}
+
+.text {
+  display: flex;
+  margin-top: 200px;
+}
+.text h2 {
+  width: 85%;
+  font-size: 110px;
+  font-weight: 700;
+}
+.text p {
+  width: 380px;
+  height: 200px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  font-size: 24px;
+  font-weight: 600;
 }
