@@ -17,6 +17,7 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
+
 .container {
   max-width: 1800px;
   margin: 0 auto;
@@ -25,9 +26,14 @@ body {
   @extend %button-base;
   display: inline-flex;
   align-items: center;
-  border: 2px solid #333;
+  border: 1px solid #333;
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
   span {
     margin-left: 10px;
+    font-weight: 200;
   }
 }
 
@@ -323,7 +329,7 @@ body {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    gap: 0 100px;
+    gap: 0 130px;
     .pagination {
       display: flex;
       flex-direction: column;
@@ -342,11 +348,52 @@ body {
         opacity: 1;
         font-size: 24px;
         font-weight: 600;
+        .material-symbols-outlined {
+          border: 1px solid #000;
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .swiper-pagination-bullet-active {
+        color: #fff;
+        .material-symbols-outlined {
+          background-color: #333;
+        }
       }
     }
-    .mask {
-      flex-grow: 1;
-      overflow: hidden;
+  }
+}
+.mask {
+  flex-grow: 1;
+  overflow: hidden;
+  margin-top: -50px;
+  h3 {
+    font-size: 68px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  a {
+    &:hover {
+      background-color: #333;
+      color: #fff;
+      transition: all 0.25s ease;
+    }
+    @extend %button-base;
+    border: 1px solid #333;
+    display: inline-flex;
+    align-items: center;
+    span {
+      margin-left: 20px;
+      font-weight: 200;
     }
   }
 }

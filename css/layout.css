@@ -1,4 +1,4 @@
-.main-visual .pagination .swiper-pagination-bullet .txt .btn, .btn-link {
+.mask a, .main-visual .pagination .swiper-pagination-bullet .txt .btn, .btn-link {
   padding: 12px 20px;
   border: none;
   border-radius: 100px;
@@ -23,10 +23,15 @@ body {
 .btn-link {
   display: inline-flex;
   align-items: center;
-  border: 2px solid #333;
+  border: 1px solid #333;
+}
+.btn-link:hover {
+  background-color: #333;
+  color: #fff;
 }
 .btn-link span {
   margin-left: 10px;
+  font-weight: 200;
 }
 
 .header {
@@ -324,7 +329,7 @@ body {
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
-  gap: 0 100px;
+  gap: 0 130px;
 }
 .pen .slider .pagination {
   display: flex;
@@ -346,7 +351,48 @@ body {
   font-size: 24px;
   font-weight: 600;
 }
-.pen .slider .mask {
+.pen .slider .pagination .swiper-pagination-bullet .material-symbols-outlined {
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pen .slider .pagination .swiper-pagination-bullet-active {
+  color: #fff;
+}
+.pen .slider .pagination .swiper-pagination-bullet-active .material-symbols-outlined {
+  background-color: #333;
+}
+
+.mask {
   flex-grow: 1;
   overflow: hidden;
+  margin-top: -50px;
+}
+.mask h3 {
+  font-size: 68px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.mask p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.mask a:hover {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+.mask a {
+  border: 1px solid #333;
+  display: inline-flex;
+  align-items: center;
+}
+.mask a span {
+  margin-left: 20px;
+  font-weight: 200;
 }
