@@ -256,11 +256,12 @@ body {
   align-items: center;
 }
 .slogan h2 {
-  font-size: clamp(64px, 10vw, 200px);
+  font-size: clamp(68px, 6vw, 200px);
   font-weight: 500;
 }
 .slogan p {
-  font-size: clamp(24px, 2vw, 64px);
+  font-weight: 500;
+  font-size: clamp(24px, 1vw, 64px);
 }
 
 .pen {
@@ -313,13 +314,14 @@ body {
 }
 .pen .slider .mask h3 {
   font-size: 64px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 .pen .slider .mask p {
   margin-bottom: 20px;
 }
 .pen .slider .mask a {
-  border: 2px solid #333;
+  border: 1px solid #333;
   display: inline-flex;
   align-items: center;
 }
