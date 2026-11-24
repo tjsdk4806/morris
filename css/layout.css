@@ -264,6 +264,80 @@ body {
   font-size: clamp(24px, 1vw, 64px);
 }
 
+.floating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 140px;
+  right: 27px;
+  z-index: 1000;
+  width: 240px;
+  height: 240px;
+  background-color: #252525;
+  border-radius: 50%;
+  color: #fff;
+}
+.floating .floating-logo {
+  display: block;
+  width: 90px;
+  height: auto;
+  margin-bottom: 22px;
+}
+.floating .floating-menu {
+  width: 140px;
+}
+.floating .floating-menu .store,
+.floating .floating-menu .inquiry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  text-decoration: none;
+}
+.floating .floating-menu .store .in {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.floating .floating-menu .inquiry .on {
+  font-size: 18px;
+  font-weight: 500;
+  color: #999;
+}
+.floating .floating-menu img {
+  display: block;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.floating .floating-menu .line {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background-color: #777;
+}
+.floating .close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  cursor: pointer;
+}
+.floating .close img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+#floating-close {
+  display: none;
+}
+
+#floating-close:checked + .floating {
+  display: none;
+}
+
 .pen {
   padding: 150px 0;
   background-color: #ccc;
