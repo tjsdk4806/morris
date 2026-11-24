@@ -436,3 +436,120 @@ body {
   -webkit-line-clamp: 2;
   line-clamp: 2;
 }
+
+.contact {
+  background-image: url("../images/main/contact-bg.jpg");
+  background-size: cover;
+  padding: 150px 30px;
+  color: #fff;
+}
+.contact h3 {
+  margin: 50px 0;
+  line-height: 1.25;
+}
+.contact .list {
+  display: flex;
+  gap: 20px;
+}
+.contact .list li {
+  flex: 0 1 25%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+.contact .list li .title {
+  font-size: 24px;
+  margin: 20px 0;
+}
+.contact .list li span {
+  font-size: 36px;
+  padding: 20px;
+  border-radius: 300px;
+  border: 1px solid #fff;
+}
+
+.footer {
+  background-color: #252525;
+  padding: 100px 0;
+  color: #fff;
+}
+.footer .upper {
+  display: flex;
+}
+.footer .upper .copyright-box {
+  flex-grow: 1;
+  padding: 0 100px;
+  margin-left: 100px;
+  border-left: 1px solid #fff;
+}
+.footer .upper .copyright-box .copyright {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.footer .upper .copyright-box dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .upper .copyright-box dl div {
+  display: flex;
+}
+.footer .upper .copyright-box dl .address {
+  flex-basis: 100%;
+}
+.footer .upper .copyright-box dl .tel {
+  flex-basis: 100%;
+}
+.footer .upper .copyright-box dl dt {
+  display: flex;
+  align-items: center;
+}
+.footer .upper .copyright-box dl dt:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+.footer .info-box {
+  margin-top: 75px;
+}
+.footer .info-box dl {
+  display: flex;
+  flex-direction: column;
+}
+.footer .info-box dl div {
+  display: flex;
+}
+.footer .info-box dt {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.footer .info-box dt:after {
+  content: "";
+  display: inline-flex;
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+.footer .info-box dd {
+  white-space: nowrap;
+}
+
+.lower {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  align-items: center;
+}
+.lower .company {
+  font-size: 5vw;
+  font-weight: 500;
+}
+.lower .sns {
+  display: flex;
+  gap: 20px;
+}
